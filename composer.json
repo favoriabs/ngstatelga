@@ -11,5 +11,8 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+      "php": ">=5.4.0",
+      "Illuminate/support": "~5"
+    }
 }
