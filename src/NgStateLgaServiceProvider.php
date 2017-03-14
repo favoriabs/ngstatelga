@@ -1,5 +1,5 @@
 <?php
-namespace favoriabs\ngstatelga;
+namespace Favoriabs\Ngstatelga;
 use Illuminate\Support\ServiceProvider;
 
 class NgStateLgaServiceProvider extends ServiceProvider
