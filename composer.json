@@ -1,0 +1,15 @@
+{
+    "name": "favor/ngstatelga",
+    "description": "A laravel package that helps with Nigerian states and local government areas",
+    "keywords": ["laravel", "Nigeria", "States", "Local Government", "Lgas"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Favor Oriabure",
+            "email": "favoriabs@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
