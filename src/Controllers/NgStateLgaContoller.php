@@ -1,5 +1,5 @@
 <?php
-namespace Favoriabs\Ngstatelga\Controllers;
+namespace Favoriabs\NgStateLga\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
