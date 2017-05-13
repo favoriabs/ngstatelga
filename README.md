@@ -9,7 +9,7 @@ PHP 5.4+ and Composer is required.
 To get this package, simply add the following line to the require block of your composer.json file.
 
 ```
-  composer require favoriabs/ngstatelga:dev-master
+  composer require favoriabs/ngstatelga:1.0.0
 ```
 Once the NgStateLga is installed, you need to register the service provider. Open up ```config/app.php``` and add the following to the ```providers``` section.
 
