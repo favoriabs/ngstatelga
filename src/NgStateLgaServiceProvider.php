@@ -11,7 +11,7 @@ class NgStateLgaServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+
         include __DIR__ . '/routes.php';
         $this->loadViewsFrom(__DIR__ . '/views', 'ngstatelga');
         $this->loadMigrationsFrom(__DIR__.'/migrations');
