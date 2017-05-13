@@ -1,7 +1,7 @@
 # ngstatelga
 
 # Introduction
-This laravel package helps developers with Nigerian states and local government areas. 
+This laravel package helps developers with Nigerian states and local government areas.
 
 # Installation
 PHP 5.4+ and Composer is required.
@@ -17,8 +17,9 @@ Once the NgStateLga is installed, you need to register the service provider. Ope
 
 # Usage
 After this is done, you'll need to run the following commands.
-* ```php artisan vendor:publish``` . 
+* ```php artisan vendor:publish``` .
 This will publish migration files for both states and local government areas to your migration file. It will also publish seeder files.
+It will also publish the view page, so you can edit it as you want the page to be.
 
 When this is done, you will need to run ```php artisan migrate``` to migrate.
 Then ```php artisan db:seed``` to seed with the appropriate states and local government areas. Do not forget to add the classes for the seeder files to ```DatabaseSeeder.php``` like so:
