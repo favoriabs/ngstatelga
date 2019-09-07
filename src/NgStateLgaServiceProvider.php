@@ -17,9 +17,8 @@ class NgStateLgaServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/migrations');
         // publish seeds
         $this->publishes([ __DIR__ . '/seeds' => $this->app->databasePath() . '/seeds' ], 'seeds');
-        $this->publishes([__DIR__ . '/migrations' => $this->app->databasePath() . '/migrations'], 'migrations');
       // publish views
-        $this->publishes([__DIR__.'/views' => resource_path('views/ngstatelga'),], 'views');
+        // $this->publishes([__DIR__.'/views' => resource_path('views/ngstatelga'),], 'views');
         // $this->publishes([__DIR__.'/views' => base_path('resources/views')]);
         // $this->loadViewsFrom(base_path('resources/views'), 'ngstatelga');
     }
