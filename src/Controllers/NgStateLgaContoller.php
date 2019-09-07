@@ -3,20 +3,25 @@ namespace Favoriabs\NgStateLga\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use DB;
+use Favoriabs\NgStateLga\Models\State;
+use Favoriabs\NgStateLga\Models\Lga;
 
 class NgStateLgaController extends Controller
 {
-    public function index(){
-      $lgas = DB::table('lgas')->get();
-      $states = DB::table('states')->get();
+    public function index()
+    {
+      $lgas = Lga::all();
+      $states = State::all();
       return view('ngstatelga::index')->with('lgas', $lgas)->with('states', $states);
     }
 
     public function ajaxCall(Request $request)
     {
-      $state = DB::table('states')->where('id', $request->state)->first();
-      $lgas = DB::table("lgas")->where("state_id",$state->id)->get();
-      return $lgas;
+      $state = State::where('id', $request->state)->with('lgas')->first();
+      return response()->json([
+        'success' => true,
+        'data' => $state,
+      ]);
+      return $state;
     }
 }
