@@ -76,7 +76,7 @@ $(function() {
                   },
                   success: function(data) {
                       $('#lga_dropdown').empty();
-                      $.each(data, function(i, lga) {
+                      $.each(data.lgas, function(i, lga) {
                           $('#lga_dropdown').append($("<option>").text(lga['name']).attr('value', lga['id']));
 
                       });
