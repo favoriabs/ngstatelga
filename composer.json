@@ -19,5 +19,15 @@
         "psr-4": {
             "Favoriabs\\NgStateLga\\": "src"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Favoriabs\\NgStateLga\\NgStateLgaServiceProvider"
+            ],
+            "aliases": {
+                "NgStateLga": "Favoriabs\\NgStateLga\\Facade"
+            }
+        }
+    },
 }
